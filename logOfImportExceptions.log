@@ -1,0 +1,36 @@
+ ************************************** Exception for file: a.zip. File number 3 of 3 ****************************************************************************************************
+org.dspace.content.crosswalk.MetadataValidationException: Error validating METS in java.util.zip.ZipFile$ZipFileInflaterInputStream@974d8ff
+	at org.dspace.content.packager.METSManifest.create(METSManifest.java:295)
+	at org.dspace.content.packager.AbstractMETSIngester.parsePackage(AbstractMETSIngester.java:344)
+	at org.dspace.content.packager.AbstractMETSIngester.ingest(AbstractMETSIngester.java:210)
+	at org.dspace.app.packager.Packager.ingest(Packager.java:568)
+	at org.dspace.app.packager.Packager.main(Packager.java:426)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.dspace.app.launcher.ScriptLauncher.runOneCommand(ScriptLauncher.java:229)
+	at org.dspace.app.launcher.ScriptLauncher.main(ScriptLauncher.java:81)
+Caused by: org.jdom.input.JDOMParseException: Error on line 8: The entity name must immediately follow the '&' in the entity reference.
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:468)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:770)
+	at org.dspace.content.packager.METSManifest.create(METSManifest.java:282)
+	... 10 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 8; columnNumber: 98; The entity name must immediately follow the '&' in the entity reference.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLScanner.reportFatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEntityReference(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:453)
+	... 12 more
+

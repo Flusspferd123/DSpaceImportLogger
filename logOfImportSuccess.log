@@ -1,0 +1,15 @@
+******************************************Processing file number 1 of 3 files. Filename: 101121.zip***************************************************************
+Ingesting package located at C:/Users/gruber/Desktop/dSpaceImportFolder/101121.zip
+CREATED new DSpace ITEM [ hdl=123456789/3558, dbID=4dd63e78-d913-43fd-9e6c-71b84e9f68c5 ] 
+Time needed for import in MilliSeconds: 5715
+
+******************************************Processing file number 2 of 3 files. Filename: 252465.zip***************************************************************
+Ingesting package located at C:/Users/gruber/Desktop/dSpaceImportFolder/252465.zip
+CREATED new DSpace ITEM [ hdl=123456789/3559, dbID=0339514a-62e4-415b-9f92-24c06613dcdc ] 
+Time needed for import in MilliSeconds: 5710
+
+******************************************Processing file number 3 of 3 files. Filename: a.zip***************************************************************
+Ingesting package located at C:/Users/gruber/Desktop/dSpaceImportFolder/a.zip
+org.dspace.content.crosswalk.MetadataValidationException: Error validating METS in java.util.zip.ZipFile$ZipFileInflaterInputStream@974d8ff
+Time needed for import in MilliSeconds: 4437
+
