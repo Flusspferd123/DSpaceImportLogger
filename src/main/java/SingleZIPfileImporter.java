@@ -40,7 +40,7 @@ public class SingleZIPfileImporter {
 
         for (File file : files) {
 
-            String dspaceImportCommand = "./dspace packager -e julius.gruber@tuwien.ac.at  -t AIP --submit -w  -o validate=true ";
+            String dspaceImportCommand = "./dspace packager -e julius.gruber@tuwien.ac.at  -t AIP --submit -w  -o validate=false ";
             String pathImportZIP = importFolder + file.getName();
             //ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "cd " + dspaceBinFolderPath + " && " + dspaceImportCommand + pathImportZIP);
             //ProcessBuilder builder = new ProcessBuilder( "cd " + dspaceBinFolderPath + " && " + dspaceImportCommand + pathImportZIP);

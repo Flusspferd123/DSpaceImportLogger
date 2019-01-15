@@ -12,7 +12,10 @@ public class RunLoggerTest {
 
         //String importFolder =  "C:/Users/gruber/Desktop/dSpaceImportFolder/";
         String importFolder = "/home/tiss/jgruber/dSpaceImportFolder/";
-        String dspaceBinFolderPath = "/opt/dspace/dspacework/bin";
+        //DSpace 6
+        //String dspaceBinFolderPath = "/opt/dspace/dspacework/bin";
+        //DSpace 7
+        String dspaceBinFolderPath = "/opt/dspace7/dspace7work/bin";
         SingleZIPfileImporter.importToDSPaceFilebyFile(importFolder,dspaceBinFolderPath );
 
 
